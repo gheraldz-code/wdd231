@@ -136,9 +136,9 @@ nav a {
 /* Current page */
 nav a.active {
     background-color: #254675;
-    color: #FFFFFF;
+    color: var(--surface-color);
     font-weight: 700;
-    border-bottom: 3px solid #FFFFFF;
+    border-bottom: 3px solid var(--surface-color);
 }
 
 /* Hover effect */
