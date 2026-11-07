@@ -1,0 +1,75 @@
+
+/* Larger Screens */
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header span {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    main section {
+        padding: 1.5rem;
+    }
+
+    
+    /* Navigation - Large Screens */
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+        margin-left: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.75rem 1.25rem;
+    }
+    
+
+    /* Main Layout - Larger Screens */
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    main section {
+        margin-bottom: 0;
+    }
+
+    main .certificate {
+        grid-column: 1 / -1;
+    }
+
+    /* Course Cards - Larger Screens */
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
