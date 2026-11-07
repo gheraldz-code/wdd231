@@ -32,6 +32,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
     background-color: var(--primary-color);
     color: var(--text-light-color);
@@ -111,10 +112,6 @@ nav {
 
 nav.open {
     display: block;
-}
-
-header {
-    flex-wrap: wrap;
 }
 
 nav ul {
