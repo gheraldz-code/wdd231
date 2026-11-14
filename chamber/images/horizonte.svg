@@ -1,0 +1,6 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="12" fill="#735744"></rect>
+  <path d="M35 85 V45 L65 25 L95 45 V85 M95 85 V55 L125 35 L155 55 V85" fill="none" stroke="#FFFFFF" stroke-width="7"></path>
+  <text x="100" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">HORIZONTE</text>
+</svg>

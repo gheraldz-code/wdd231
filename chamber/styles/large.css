@@ -1,0 +1,93 @@
+
+/** Large Screen Styles **/
+
+@media screen and (min-width: 768px) {
+
+    /* Header and Navigation */
+    .header-content {
+        flex-wrap: nowrap;
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        width: auto;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        padding: 0.7rem 1rem;
+    }
+
+    /* Main Content */
+    .directory-section {
+        padding: 3rem 2rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    /* View Options */
+    .view-options {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Members Grid */
+    .members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* List View */
+    .members-list .member-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .members-list .member-card img {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .development-information {
+        border-top: none;
+        border-left: 1px solid var(--color-border);
+        padding: 0 0 0 2rem;
+    }
+
+    .members-list .member-info {
+        flex: 1;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}

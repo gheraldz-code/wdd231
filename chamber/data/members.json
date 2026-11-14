@@ -1,0 +1,66 @@
+
+[
+    {
+        "name": "Andes Technology",
+        "address": "Av. San Martín, Zona Equipetrol, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1001",
+        "website": "https://andes-technology.example",
+        "image": "andes-tech.svg",
+        "membershipLevel": 3,
+        "description": "Technology solutions, software development, and IT consulting."
+    },
+    {
+        "name": "Verde Vida Market",
+        "address": "Av. Busch, Zona Norte, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1002",
+        "website": "https://verde-vida.example",
+        "image": "verde-vida.svg",
+        "membershipLevel": 2,
+        "description": "Organic products, healthy food, and sustainable living."
+    },
+    {
+        "name": "Constructora Horizonte",
+        "address": "Av. Cristo Redentor, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1003",
+        "website": "https://horizonte-construye.example",
+        "image": "horizonte.svg",
+        "membershipLevel": 3,
+        "description": "Residential and commercial construction services."
+    },
+    {
+        "name": "Café Aroma",
+        "address": "Calle René Moreno, Centro, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1004",
+        "website": "https://cafe-aroma.example",
+        "image": "cafe-aroma.svg",
+        "membershipLevel": 1,
+        "description": "Specialty coffee, pastries, and local coffee experiences."
+    },
+    {
+        "name": "Bolivia Travel Experience",
+        "address": "Av. Monseñor Rivero, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1005",
+        "website": "https://bolivia-travel.example",
+        "image": "bolivia-travel.svg",
+        "membershipLevel": 2,
+        "description": "Tourism services and travel experiences across Bolivia."
+    },
+    {
+        "name": "Salud Integral Center",
+        "address": "Av. Alemana, Zona Norte, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1006",
+        "website": "https://salud-integral.example",
+        "image": "salud-integral.svg",
+        "membershipLevel": 3,
+        "description": "Wellness, preventive care, and professional health services."
+    },
+    {
+        "name": "Creativa Marketing",
+        "address": "Calle Warnes, Santa Cruz de la Sierra, Bolivia",
+        "phone": "+591 3 300 1007",
+        "website": "https://creativa-marketing.example",
+        "image": "creativa.svg",
+        "membershipLevel": 1,
+        "description": "Digital marketing, branding, and creative communication."
+    }
+]

@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="12" fill="#674A86"></rect>
+  <circle cx="75" cy="48" r="20" fill="#F5D76E"></circle>
+  <circle cx="125" cy="48" r="20" fill="#FFFFFF"></circle>
+  <path d="M75 70 L125 70 L100 88Z" fill="#F5D76E"></path>
+  <text x="100" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">CREATIVA</text>
+</svg>

@@ -1,0 +1,6 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="12" fill="#102A56"></rect>
+  <path d="M25 85 L65 30 L100 85 L125 55 L160 85" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round"></path>
+  <text x="100" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">ANDES TECH</text>
+</svg>

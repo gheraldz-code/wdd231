@@ -1,0 +1,7 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="12" fill="#8B5E3C"></rect>
+  <path d="M65 35 H130 V75 Q100 105 65 75Z" fill="#FFFFFF"></path>
+  <path d="M130 45 H145 Q165 70 130 75" fill="none" stroke="#FFFFFF" stroke-width="6"></path>
+  <text x="100" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">CAFE AROMA</text>
+</svg>

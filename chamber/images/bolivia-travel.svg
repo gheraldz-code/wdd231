@@ -1,0 +1,7 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="12" fill="#167B91"></rect>
+  <path d="M35 80 L75 30 L105 65 L130 40 L165 80Z" fill="#FFFFFF"></path>
+  <circle cx="145" cy="25" r="10" fill="#F5D76E"></circle>
+  <text x="100" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">BOLIVIA TRAVEL</text>
+</svg>
