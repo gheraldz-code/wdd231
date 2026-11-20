@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to the Santa Cruz Business Directory. Connect with local businesses, discover events, and explore opportunities in Santa Cruz de la Sierra, Bolivia.">
+    <meta name="author" content="Henry Gerald Zubieta Gutierrez">
+
+    <meta property="og:title" content="Santa Cruz Business Directory | Home">
+    <meta property="og:description" content="Connect with businesses and discover opportunities in Santa Cruz de la Sierra, Bolivia.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gheraldz-code.github.io/wdd231/chamber/images/social-preview.png">
+    <meta property="og:url" content="https://gheraldz-code.github.io/wdd231/chamber/index.html">
+    
+    <title>Home | Santa Cruz Business Directory</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/home.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-brand" aria-label="Santa Cruz Business Directory Home">
+                <span class="brand-name">Santa Cruz</span>
+                <span class="brand-subtitle">Business Directory</span>
+            </a>
+
+            <button id="menu-button" class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation">
+                
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg"
+                alt="Business community in Santa Cruz de la Sierra">
+            <div class="hero-content">
+                <h1>Welcome to Santa Cruz</h1>
+                <p>Connecting businesses. Building opportunities.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="current-events">
+            <div class="section-heading">
+                <h2>Current Events</h2>
+                <p>Stay connected with the business community of Santa Cruz.</p>
+            </div>
+
+            <div id="events-container" class="events-grid">
+
+                <article class="event-card">
+                    <h3>Business Networking</h3>
+                    <p>Connect with local entrepreneurs and business professionals.</p>
+                    <span class="event-date">Date to be announced</span>
+                </article>
+
+                <article class="event-card">
+                    <h3>Business Development</h3>
+                    <p>Discover opportunities to grow and strengthen your business.</p>
+                    <span class="event-date">Date to be announced</span>
+                </article>
+
+                <article class="event-card">
+                    <h3>Community Partnerships</h3>
+                    <p>Build relationships and explore new business partnerships.</p>
+                    <span class="event-date">Date to be announced</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+            <div id="weather-forecast">
+                <p>Loading three-day forecast...</p>
+            </div>
+        </section>
+
+        <section class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="spotlights-container">
+                <p>Loading featured businesses...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-information">
+                <h2>Santa Cruz Business Directory</h2>
+                <p>Santa Cruz de la Sierra, Bolivia</p>
+                <p>Contact: gheraldz@hotmail.com</p>
+                <p>Phone: +591 73151081</p>
+            </div>
+
+            <div class="development-information">
+                <p>&copy; <span id="current-year"></span>
+                    Santa Cruz Business Directory</p>
+                <p>Henry Gerald Zubieta Gutierrez | WDD 231</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

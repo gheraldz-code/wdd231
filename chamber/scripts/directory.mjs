@@ -1,12 +1,15 @@
-
 // Santa Cruz Business Directory
+
+import { displayFooter, setupNavigation } 
+    from "./modules/common.mjs";
+
+displayFooter();
+setupNavigation();
 
 // DOM Elements
 const membersContainer = document.querySelector("#members-container");
 const gridButton = document.querySelector("#grid-view");
 const listButton = document.querySelector("#list-view");
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#primary-navigation");
 
 // Store member data
 let membersData = [];
@@ -122,26 +125,6 @@ listButton.addEventListener("click", () => {
     listButton.setAttribute("aria-pressed", "true");
     gridButton.setAttribute("aria-pressed", "false");
 });
-
-// Mobile Navigation
-menuButton.addEventListener("click", () => {
-    const isOpen = navigation.classList.toggle("open");
-
-    menuButton.setAttribute("aria-expanded", isOpen);
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
-
-    menuButton.textContent = isOpen ? "✕" : "☰";
-});
-
-// Footer Information
-document.querySelector("#current-year").textContent =
-    new Date().getFullYear();
-
-document.querySelector("#last-modified").textContent =
-    new Date(document.lastModified).toLocaleString("en-US");
 
 // Initialize directory
 getMembers();

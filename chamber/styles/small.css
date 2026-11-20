@@ -1,10 +1,10 @@
-
 /** Small Screen Styles - Mobile First **/
 
 /* Global Variables */
 :root {
     --color-primary: #102A56;
     --color-secondary: #0B63CE;
+    --color-orange: #FFD166;
     --color-background: #F4F6FA;
     --color-surface: #FFFFFF;
     --color-text: #222222;
@@ -94,6 +94,12 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li {
+    width: 100%;
 }
 
 .navigation a {
@@ -102,11 +108,21 @@ header {
     color: var(--color-text-light);
     text-align: center;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 .navigation a:hover,
 .navigation a.active {
     background-color: var(--color-secondary);
+    text-decoration: none;
+}
+
+/* Header Links - All States */
+header a,
+header a:hover,
+header a:focus,
+header a:active,
+header a:visited {
     text-decoration: none;
 }
 
@@ -244,6 +260,122 @@ header {
     font-size: 1rem;
 }
 
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-text-light);
+    background-color: #102A5680;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    border-radius: var(--radius-card);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.cta-button:focus-visible {
+    outline: 3px solid #FFD166;
+    outline-offset: 3px;
+}
+
+/* Current Events */
+.current-events {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading p {
+    color: var(--color-muted);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.event-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-card);
+}
+
+.event-card h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.event-card p {
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.event-date {
+    display: inline-block;
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
 /* Footer */
 footer {
     background-color: var(--color-primary);
@@ -274,7 +406,7 @@ footer {
 /* Keyboard Accessibility */
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid var(--color-secondary);
+    outline: 3px solid var(--color-orange);
     outline-offset: 3px;
 }
 
@@ -291,4 +423,108 @@ button:focus-visible {
 
 .member-info p {
     overflow-wrap: anywhere;
+}
+
+
+/* Weather Section */
+.weather-section {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.weather-section h2 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#current-weather,
+#weather-forecast {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-card);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 1.25rem;
+}
+
+#current-weather {
+    text-align: center;
+}
+
+#weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.forecast-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-accent);
+    border-radius: var(--radius-card);
+}
+
+.forecast-card h3 {
+    color: var(--color-primary);
+}
+
+.forecast-card p {
+    color: var(--color-muted);
+}
+
+
+/* Company Spotlights */
+.company-spotlights {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.company-spotlights h2 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.spotlight-card h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.spotlight-card p {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+.spotlight-card a {
+    font-weight: 700;
 }
