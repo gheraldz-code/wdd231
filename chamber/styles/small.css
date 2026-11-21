@@ -323,7 +323,7 @@ header a:visited {
 
 /** Current Events **/
 
-/*.current-events {
+/*.current-events { common
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
@@ -334,11 +334,11 @@ header a:visited {
     margin-bottom: 2rem;
 }
 
-.section-heading h2 {
+/*.section-heading h2 { common
     color: var(--color-primary);
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-}
+}*/
 
 .section-heading p {
     color: var(--color-muted);
@@ -403,18 +403,18 @@ button:focus-visible {
 
 /** Weather Section **/
 
-/*.weather-section {
+/*.weather-section { common
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
-}*/
+}
 
-.weather-section h2 {
+.weather-section h2 { common
     color: var(--color-primary);
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-}
+}*/
 
 #current-weather,
 #weather-forecast {
@@ -452,18 +452,19 @@ button:focus-visible {
 
 
 /* Company Spotlights */
-/*.company-spotlights {
+
+/*.company-spotlights { common
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
-}*/
+}
 
-.company-spotlights h2 {
+.company-spotlights h2 { common
     color: var(--color-primary);
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-}
+}*/
 
 #spotlights-container {
     display: grid;
@@ -505,16 +506,6 @@ button:focus-visible {
     font-weight: 700;
 }
 
-/* Common declarations */
-
-.current-events,
-.weather-section,
-.company-spotlights {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 2.5rem 1rem;
-}
-
 
 /* Footer */
 footer {
@@ -541,4 +532,32 @@ footer {
     border-top: 1px solid var(--color-border);
     padding-top: 1rem;
     font-size: 0.9rem;
+}
+
+
+/* Common declarations */
+
+.current-events,
+.weather-section,
+.company-spotlights {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.section-heading h2,
+.weather-section h2,
+.company-spotlights h2 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+.weather-section h2,
+.company-spotlights h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin-bottom: 0.5rem;
 }
