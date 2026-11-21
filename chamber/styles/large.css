@@ -1,4 +1,6 @@
-/** Large Screen Styles **/
+/***********************
+    Large Screen Styles
+************************/
 
 @media screen and (min-width: 768px) {
 
@@ -29,7 +31,10 @@
     }
 
     /* Main Content */
-    .directory-section {
+    .directory-section,
+    .current-events,
+    .weather-section,
+    .company-spotlights {
         padding: 3rem 2rem;
     }
 
@@ -58,8 +63,9 @@
         gap: 1rem;
     }
 
-    .members-list .member-card img {
-        display: none;
+    .members-list .member-info {
+        flex: 1;
+        align-items: flex-start;
     }
 
     /* Hero Section */
@@ -75,36 +81,21 @@
         font-size: 1.25rem;
     }
 
-    /* Current Events */
-    .current-events {
-        padding: 3rem 2rem;
-    }
-
+    /* Events */
     .events-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.5rem;
     }
 
-
-    /* Weather Section */
-    .weather-section {
-        padding: 3rem 2rem;
-    }
-
+    /* Weather */
     #weather-forecast {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-
     /* Company Spotlights */
-    .company-spotlights {
-        padding: 3rem 2rem;
-    }
-
     #spotlights-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
 
     /* Footer */
     .footer-content {
@@ -120,22 +111,12 @@
         border-left: 1px solid var(--color-border);
         padding: 0 0 0 2rem;
     }
-
-    .members-list .member-info {
-        flex: 1;
-        align-items: flex-start;
-    }
-    
 }
 
 @media screen and (min-width: 1024px) {
 
-    .members-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
+    .members-grid,
     #spotlights-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-
 }

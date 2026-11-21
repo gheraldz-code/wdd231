@@ -321,12 +321,13 @@ header a:visited {
     outline-offset: 3px;
 }
 
-/* Current Events */
-.current-events {
+/** Current Events **/
+
+/*.current-events {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
-}
+}*/
 
 .section-heading {
     text-align: center;
@@ -376,32 +377,6 @@ header a:visited {
     font-weight: 700;
 }
 
-/* Footer */
-footer {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    padding: 2rem 1rem;
-}
-
-.footer-content {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-}
-
-.contact-information h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.development-information {
-    border-top: 1px solid var(--color-border);
-    padding-top: 1rem;
-    font-size: 0.9rem;
-}
 
 /* Keyboard Accessibility */
 a:focus-visible,
@@ -426,12 +401,13 @@ button:focus-visible {
 }
 
 
-/* Weather Section */
-.weather-section {
+/** Weather Section **/
+
+/*.weather-section {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
-}
+}*/
 
 .weather-section h2 {
     color: var(--color-primary);
@@ -476,11 +452,11 @@ button:focus-visible {
 
 
 /* Company Spotlights */
-.company-spotlights {
+/*.company-spotlights {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2.5rem 1rem;
-}
+}*/
 
 .company-spotlights h2 {
     color: var(--color-primary);
@@ -527,4 +503,42 @@ button:focus-visible {
 
 .spotlight-card a {
     font-weight: 700;
+}
+
+/* Common declarations */
+
+.current-events,
+.weather-section,
+.company-spotlights {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.contact-information h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.development-information {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+    font-size: 0.9rem;
 }
